@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DebugType>embedded</DebugType>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Description>NoLava</Description>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GameVersion>0.86.2-r.0</GameVersion>
+  </PropertyGroup>  
+  <ItemGroup>
+     <PackageReference Include="BepInEx.Unity" Version="6.0.0-be.554" PrivateAssets="all" />
+     <PackageReference Include="BepInEx.AutoPlugin" Version="1.0.1" PrivateAssets="all" />
+     <PackageReference Include="SpiderHeck.GameLibs" Version="$(GameVersion)" PrivateAssets="all" />
+     <PackageReference Include="UnityEngine.Modules" Version="2020.3.13" PrivateAssets="all" />
+   </ItemGroup>   
+</Project>
